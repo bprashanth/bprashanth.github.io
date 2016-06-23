@@ -1,0 +1,112 @@
+<PRE>
+[Rational Software Corporation]
+
+                           Trouble Shooting Guide
+
+____________________________________________________________________________
+
+TITLE:          Trouble Shooting Guide
+PRODUCT:        Any and All
+
+This guide contains a collection of hints that may help you when
+you are facing a problem and you think you tried everything and you
+don't know what else to try. The trick is to take one step back and
+to look at the problem in a more disconnected way, pretty much like
+in "The hitch-hikers guide to the galaxy" where you only saw the
+spaceship when NOT staring at it directly but rather letting it
+appear in your field of vision from the corner of your eye.
+
+Every problem has its causes and after the problem has been solved,
+you always know exactly why you didn't think of the causes at first.
+Over the years we have collected these reasons and translated them into
+general hints that may help you in any trouble shooting situation.
+Translate these hints into causes that might apply to your problem
+and try to eliminate these causes.
+
+Check the most frequent causes of problems in your problem domain.
+   - is it an access rights problem?
+   - is it a problem with case sensitivity?
+
+When/where did this problem NOT occur?
+   - what is/was different?
+   - can we go back to that situation and forget about the problem?
+
+Is all information on the problem reliable?
+   - can you reproduce the problem yourself?
+   - is the error message wrong?
+
+Was it asked to do it the "wrong" way?
+   - are switches set wrong?
+   - read the documentation for the command
+
+Do you have all information that can be acquired about the problem?
+   - check all error logs
+   - run with the debugger
+   - run with logging of (debug) messages completely open
+   - build in your own debug messages
+
+Is this a known problem?
+   - check release notes
+   - check problems databases
+   - check personal notes
+   - did somebody else run into this problem before?
+
+Does the problem need to be solved?
+   - is there a work-around?
+   - can some steps be replaced by different steps?
+   - can you do something else completely instead?
+   - is this problem your responsibility?
+
+Does the problem need to be solved NOW to make progress?
+   - work on a different part first and you might stumble across the
+     cause for your problem
+
+A problem doesn't need to be understood to be fixed.
+   - if you know how the problem can be fixed but you don't know
+     why, just fix it
+
+What has helped before solving OTHER problems?
+   - reboot machine
+   - restart software
+
+Make a list of all factors possibly involved and try changing factors.
+   - command, arguments, options
+   - product, OS, platform, patches
+   - environment variables
+   - switches
+   - path
+   - which user performs the operation?
+   - to what is the operation applied?
+   - where is the operation applied?
+   - access rights
+   - machine uptime
+   - networking situation (remote user, X-display, NFS)
+   - unix processes
+
+Break up the scenario into parts and analyzed them individually or try
+similar combinations.
+   - if A &amp; B doesn't work, setup separate tests for A and B
+   - if A &amp; B doesn't work, try A &amp; C
+   - if A &amp; B doesn't work, but A &amp; C works but you don't know why,
+     try A &amp; D
+
+Did you analyze the problem both in a top down and bottom up fashion?
+   - try to eliminate parts of the scenario while the problem remains
+   - think of a small scenario that might exhibit the same problem
+
+Is there a part of the problem you don't like or don't understand very
+well and prefered to ignore so far?
+
+Check or change something/anything, even if you don't see why that should
+make a change. It might give you additional information to go on.
+
+Explain your problem to somebody else. This forces you to take one step
+back and go through the complete problem thinking about every part of it.
+In the process, you might stumble across the flaw in your reasoning sofar.
+
+When the problem is solved, store the problem and its solution for future
+reference and communicate them to others.
+
+____________________________________________________________________________
+</PRE>
+
